@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: bootstrap
-    repoURL: https://github.com/hivenetes/k8s-bootstrapper
+    path: finstrap
+    repoURL: https://github.com/asastech/finstrap
     targetRevision: HEAD
   syncPolicy:
     automated:

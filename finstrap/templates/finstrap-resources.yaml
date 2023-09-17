@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-resources
+  name: finstrap-resources
   namespace: argocd
 spec:
   destination:
@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: bootstrap/bootstrap-resources
-    repoURL: https://github.com/hivenetes/k8s-bootstrapper
+    path: finstrap/finstrap-resources
+    repoURL: https://github.com/asastech/finstrap
     targetRevision: HEAD
     helm:
       parameters:

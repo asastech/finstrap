@@ -40,7 +40,7 @@ systemctl enable kubelet
 systemctl start kubelet
 
 echo ".........----------------#################._.-.-KUBERNETES-.-._.#################----------------........."
-rm /root/.kube/config
+rm -r ~/.kube/config
 kubeadm reset -f
 
 # uncomment below line if your host doesnt have minimum requirement of 2 CPU
