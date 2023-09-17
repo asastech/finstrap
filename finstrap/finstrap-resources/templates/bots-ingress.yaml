@@ -1,0 +1,28 @@
+{{- if .Values.bots.enable }}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-bots
+  namespace: bots
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-issuer
+spec:
+  ingressClassName: traefik
+  tls:
+  - hosts:
+    - bots.{{ .Values.domain }}
+    secretName: bots-secret-tls
+  rules:
+  - host: bots.{{ .Values.domain }}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: bots
+            port: 
+                number: 8080               
+{{- end }}
