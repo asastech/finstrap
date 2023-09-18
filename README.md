@@ -5,7 +5,7 @@
 "*Production-grade*" is a loaded term. What constitutes production readiness will vary according to your use case. While a Kubernetes cluster is production-ready the moment it is ready to serve traffic, there is a commonly agreed set of minimum requirements, as shown in the infographic below.
 
 <p align="center">
-<img src="./docs/pionative.png" alt="k8s-prod" width=800>
+<img src="./docs/pionative.jpeg" alt="k8s-prod" width=800>
 </p>
 
 
