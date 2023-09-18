@@ -63,3 +63,4 @@ kubectl -n argocd port-forward svc/argocd-server 8080:80
 # Open the browser and go to localhost:8080 to access Argo CD UI
 # Login with username: `admin,` password: `paste the value from the previous step.`
 ```
+![argocd-ui](../docs/argocd-ui.jpeg)
