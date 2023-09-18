@@ -46,6 +46,8 @@ optional deployment Kubernetes single-node
 2. Initialize Terraform backend:
 
     ```shell
+    cd infrastructure
+    
     terraform init
     ```
 

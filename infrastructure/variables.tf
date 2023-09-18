@@ -55,3 +55,40 @@ variable "argocd_additional_helm_values_file" {
   default     = "argocd-ha-helm-values.yaml"
   description = "Additional Helm values to use"
 }
+
+
+variable "vault_helm_repo" {
+  type        = string
+  default     = "https://helm.releases.hashicorp.com"
+  description = "Vault Helm chart repository URL"
+}
+
+variable "vault_helm_chart" {
+  type        = string
+  default     = "vault"
+  description = "vault Helm chart name"
+}
+
+variable "vault_helm_release_name" {
+  type        = string
+  default     = "vault"
+  description = "vault Helm release name"
+}
+
+variable "vault_helm_chart_version" {
+  type        = string
+  default     = "0.25.0"
+  description = "vault Helm chart version to deploy"
+}
+
+variable "vault_k8s_namespace" {
+  type        = string
+  default     = "vault"
+  description = "Kubernetes namespace to use for the vault Helm release"
+}
+
+variable "vault_helm_chart_timeout_seconds" {
+  type        = number
+  default     = 500
+  description = "Timeout value for Helm chart install/upgrade operations"
+}
