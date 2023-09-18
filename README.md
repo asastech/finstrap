@@ -46,6 +46,9 @@ optional deployment Kubernetes single-node
 2. Initialize Terraform backend:
 
     ```shell
+
+    export KUBE_CONFIG_PATH=~/.kube/config
+
     cd infrastructure
 
     terraform init
