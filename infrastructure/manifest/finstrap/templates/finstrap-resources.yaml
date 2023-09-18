@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: finstrap-resources
+  namespace: argocd
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: finstrap/finstrap-resources
+    repoURL: https://github.com/asastech/finstrap
+    targetRevision: HEAD
+    helm:
+      parameters:
+        - name: domain
+          value: {{ .Values.domain }}
+  syncPolicy:
+    automated:
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
