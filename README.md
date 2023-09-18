@@ -71,7 +71,7 @@ Had fun trying out the *k8s-finstrap*? Time to say goodbye!
 
 ```bash
 # Run
-cd infrastructure/terraform
+cd infrastructure
 terraform destroy --var-file=finstrap.tfvars --auto-approve
 # Bye Bye!
 ```
