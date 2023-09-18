@@ -89,6 +89,6 @@ variable "vault_k8s_namespace" {
 
 variable "vault_helm_chart_timeout_seconds" {
   type        = number
-  default     = 500
+  default     = 300
   description = "Timeout value for Helm chart install/upgrade operations"
 }
