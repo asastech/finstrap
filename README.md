@@ -52,7 +52,7 @@ optional deployment Kubernetes single-node
 3. Copy and rename the `finstrap.tfvars.backup` file to `finstrap.tfvars`:
 
     ```shell
-    cp finstrap.tfvars.sample finstrap.tfvars
+    cp finstrap.tfvars.backup finstrap.tfvars
     ```
 
 4. Open the `finstrap.tfvars` file and adjust settings according to your needs using a text editor of your choice (preferably with [HCL](https://github.com/hashicorp/hcl/blob/main/hclsyntax/spec.md) lint support).
