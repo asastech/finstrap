@@ -82,4 +82,4 @@ terraform destroy --var-file=finstrap.tfvars --auto-approve
 ```
 
 ----
-[**Next steps »**](../finstrap/README.md)
+[**Next steps »**](./finstrap/README.md)
