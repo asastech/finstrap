@@ -1,4 +1,4 @@
-# Kubernetes  finstrap: An Extendable Framework to Set Up Production Grade Clusters
+# Kubernetes  Bootstrapper: An Extendable Framework to Set Up Production Grade Clusters
 
 ## Introduction
 
