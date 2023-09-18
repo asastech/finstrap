@@ -1,4 +1,4 @@
-# finstrap using Argo CD
+# Bootstrapping using Argo CD
 
 ## Introduction
 
