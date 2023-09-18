@@ -4,11 +4,11 @@ provider "kubernetes" {
 }
 
 # Kubernetes Manifest Resource
-resource "kubernetes_manifest" "finstrap" {
+resource "kubernetes_finstrap" "finstrap" {
   yaml_body = file("${path.module}/finstrap/finstrap.yaml")  # Path to your YAML file
 }
 
 # External Data Source to Apply the Manifest Using kubectl
-data "external" "apply_manifest" {
+data "external" "finstrap" {
   program = ["kubectl", "apply", "-f", "${path.module}/finstrap/finstrap.yaml"]
 }
