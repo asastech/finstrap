@@ -13,7 +13,7 @@
 
 The [**k8s-finstrap**](https://github.com/asastech/finstrap) project is a customizable and extendable framework that aims to solve this problem by leveraging
 
-- [Terraform](https://www.terraform.io/): Compose a production ready infrastructure on Kubernetes
+- [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli): Compose a production ready infrastructure on Kubernetes
 - [Vault](https://www.vaultproject.io/):  Kubernetes clusters with the power of Vault and dynamic secrets
 - [Argo CD](https://argo-cd.readthedocs.io/en/stable/): Application configuration management and delivery using GitOps
 
