@@ -49,7 +49,7 @@ trivy:
 
 ```bash
 # Let the bootstrap begin!
-cd finstrap
+cd bootstrap
 kubectl apply -f finstrap.yaml
 ```
 
