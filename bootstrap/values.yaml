@@ -3,11 +3,11 @@ domain:
 storageClass: "do-block-storage"
 # Application specific
 kyverno:
-  enable: false  
+  enable: true 
 logging:
-  enable: false
+  enable: true
 observability:
-  enable: false
+  enable: true
   pdkey:
   storageSize: 50Gi
   retention: 5d
